@@ -3,8 +3,10 @@
 Use this notebook as a starter
 We'll use the credit scoring dataset: https://github.com/gastonstat/CreditScoring
 
+`https://raw.githubusercontent.com/gastonstat/CreditScoring/master/CleanCreditScoring.csv`
+
 ```bash
-!wget  https://github.com/gastonstat/CreditScoring/blob/master/CleanCreditScoring.csv?raw=true
+!wget https://raw.githubusercontent.com/gastonstat/CreditScoring/master/CleanCreditScoring.csv
 ```
 
 ## Preparation
