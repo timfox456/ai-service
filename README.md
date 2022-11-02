@@ -9,6 +9,10 @@ AI as a Service
  * Lab 3: [Training A Model](md/03-training-a-model.md)
  * Lab 4: [Improving Performance](md/04-improving-performance.md)
  * Lab 5: [Model Service](md/05-deploy-models.md)
+ * Lab 7: [Neural Nets](lab-07-neural-nets/README.md)
+ * Lab 8: [Serverless](lab-08-serverless/README.md)
+ * Lab 9: [Kubeflow](lab-09-kubeflow/README.md)
+ * Lab 10: [Kubernetes](lab-09-kubernetes/README.md)
  
 
 
