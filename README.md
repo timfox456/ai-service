@@ -8,6 +8,7 @@ AI as a Service
  * Lab 1: [Churn Dataset](ipynb/churn.ipynb)
  * Lab 3: [Training A Model](md/03-training-a-model.md)
  * Lab 4: [Improving Performance](md/04-improving-performance.md)
+ * Lab 5: [Model Service](md/05-deploy-models.md)
  
 
 
