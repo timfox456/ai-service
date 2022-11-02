@@ -45,7 +45,10 @@ aws ecr create-repository --repository-name lambda-images
 Login to Docker:
 
 ```
-$(aws ecr get-login --no-include-email)
+export REGION=eu-west-1
+export ACCOUNT=XXXXXXXXXXXX
+aws ecr get-login-password --region us-west-1 | sudo docker login --username AWS --password-stdin $ACCOUNT.dkr.ecr.$REGION.amazonaws.com
+
 ```
 
 
