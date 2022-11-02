@@ -1,0 +1,45 @@
+{
+    "confirmationPrompt": {
+        "maxAttempts": 3, 
+        "messages": [
+            {
+                "content": "Mark {action} done?", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "name": "MarkDone", 
+    "rejectionStatement": {
+        "messages": [
+            {
+                "content": "OK, get back to work then!", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "sampleUtterances": [
+        "Mark done", 
+        "Finished"
+    ], 
+    "slots": [
+        {
+            "slotType": "AMAZON.EventType", 
+            "name": "action", 
+            "slotConstraint": "Required", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "Which to do did you complete?", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "sampleUtterances": []
+        }
+    ], 
+    "fulfillmentActivity": {
+        "type": "ReturnIntent"
+    }
+}

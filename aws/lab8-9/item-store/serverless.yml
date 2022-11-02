@@ -1,0 +1,24 @@
+service: item-store
+
+plugins:
+  - serverless-pseudo-parameters
+  - serverless-dotenv-plugin
+
+custom:
+  dotenv:
+    path: ../.env
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'eu-west-1'}
+  environment:
+    STAGE: ${self:provider.stage}
+
+resources:
+  Resources:
+    bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${env:ITEM_STORE_BUCKET}

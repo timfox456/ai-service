@@ -1,0 +1,10 @@
+#!/bin/bash
+. ../.env
+. checkenv.sh
+
+export CHAPTER7_PIPELINE_TRAINING_BUCKET
+export CHAPTER7_PIPELINE_PROCESSING_BUCKET
+
+export CHAPTER7_DATA_ACCESS_ARN=`node ./configure-iam.js`
+echo CHAPTER7_DATA_ACCESS_ARN=$CHAPTER7_DATA_ACCESS_ARN
+

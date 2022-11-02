@@ -1,0 +1,34 @@
+{
+    "intents": [
+        {
+            "intentVersion": "1", 
+            "intentName": "MarkDone"
+        }, 
+        {
+            "intentVersion": "1", 
+            "intentName": "CreateTodo"
+        }
+    ], 
+    "name": "todo", 
+    "locale": "en-US", 
+    "abortStatement": {
+        "messages": [
+            {
+                "content": "Sorry, I could not understand. Goodbye.", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "clarificationPrompt": {
+        "maxAttempts": 5, 
+        "messages": [
+            {
+                "content": "Sorry, can you please repeat that?", 
+                "contentType": "PlainText"
+            }
+        ]
+    }, 
+    "voiceId": "Joanna", 
+    "childDirected": false, 
+    "idleSessionTTLInSeconds": 300
+}
